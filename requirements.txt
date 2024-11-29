@@ -1,0 +1,7 @@
+decord
+numpy
+pillow
+openai
+torch
+scikit-learn
+pandas
