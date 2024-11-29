@@ -13,7 +13,7 @@ If you want to streamline the evaluation process while maintaining a user-centri
 To set up VideoAutoArena, follow these steps:
 
 ```bash
-git clone https://github.com/VideoAutoArena/VideoAutoBench.git
+git clone https://github.com/VideoAutoArena/VideoAutoArena.git
 cd VideoAutoArena
 pip install -r requirements.txt
 ```
@@ -49,7 +49,7 @@ For each sample, VideoAutoArena provides a persona, a question, responses from p
 cd src
 python sampling.py \
     --n_sample 1500 \
-    --battle_file "data/battle.history.w.judge.json" \
+    --battle_file "data/battle.history.w.judge.latest.json" \
     --LMM_name "Name of your LMM" \
     --output_path "data/your.LMM.battle.json"
 ```
@@ -134,7 +134,7 @@ Execute the scoring script using the following command:
 
 ```bash
 python get_score.py \
-    --history_path "data/battle.history.w.judge.json" \
+    --history_path "data/battle.history.w.judge.latest.json" \
     --input_dir "/path/to/save/judge/results"
 ```
 
